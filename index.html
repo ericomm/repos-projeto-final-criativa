@@ -5,7 +5,7 @@
 
         <meta name="viewport" content="width=device-width inicial-scale=1.0">
 
-        <title>Home | Atlanta</title>
+        <title>Home | Criativa</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -20,6 +20,8 @@
 
         <link href="css/destaques.css" rel="stylesheet">
 
+        <link href="css/especialidades.css" rel="stylesheet">
+
         <link href="css/diferenciais.css" rel="stylesheet">
 
         <link href="css/sobre.css" rel="stylesheet">
@@ -28,52 +30,97 @@
 
         <link href="css/contato.css" rel="stylesheet">
 
-        <link href="css/institucional.css" rel="stylesheet">
-
         <link href="css/rodape.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+
 
         
     </head>
     <body>
         <header class="cabecalho container">
-            <img src="img/logo-apeperia.svg" alt="Logo da atlanta filmes" class="cabecalho_logo">
+            <a href="index.html">    
+                <h2 class="cabecalho_logo">Criativa</h2>
+            </a>  
             <nav class="cabecalho_navegacao">
+                
+                
                 <ul>
-                    <li class="cabecalho_link"><a href="#">Sobre</a></li>
-                    <li class="cabecalho_link"><a href="#">Orçamentos</a></li>
-                    <li class="cabecalho_link"><a href="#">Blog</a></li>
-                    <li class="cabecalho_link"><a href="#">Destaques</a></li>
-                    <li class="cabecalho_link"><a href="#">Institucional</a></li>
-                    <li class="cabecalho_link"><a href="#">Contato</a></li>
+                    <li class="cabecalho_link"><a href="index.html">Home</a></li>
+                    <li class="cabecalho_link"><a href="#pacotes">Planos</a></li>
+                    <li class="cabecalho_link"><a href="#destaque">Destaques</a></li>
+                    <li class="cabecalho_link"><a href="#diferenciais">Diferenciais</a></li>
+                    <li class="cabecalho_link"><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </header>
+        
         <main>
             <section class="chamada container">
-                <h1 class="chamada_titulo">Aplicativos Na Medida</h1>
-                <p class="chamada_texto">Apeperia tem um jeito inovador de comparar e montar 
-                    aplicativos para pequenas e médias empresas.</p>
-                <a class="chamada_botao botao" href="#">Faça já seu orçamento</a>
+                <h1 class="chamada_titulo">Olá, você esta na Criativa.</h1>
+                <p class="chamada_texto">Inovação e criatividade em um só lugar para 
+                    simplificar a sua comunicação e a sua publicidade.</p>
+                <a class="chamada_botao botao" href="contato.html">Faça já seu orçamento</a>
             </section>
 
 
 
-            <section class="destaques container">
+            <section class="destaques container" id="destaque">
                 <h2 class="destaques_titulo">Destaques</h2>
-                <a href="#">
+                <a href="https://insightgrupo.com.br/tudo-sobre-logotipo/" target="_blank">
                     <figure class="destaques_painel">
-                        <img src="img/comecando-criar-logotipo.png" alt="Logo tipo destaques" class="destaques_painel-img">
+                        <img src="img/criacao-de-logomarca.jpg" alt="Logo tipo destaques" class="destaques_painel-img">
                         <figcaption class="destaques_painel-texto">Conheça as primeiras etapas para a criação de um logotipo
                         </figcaption>
                     </figure>
                 </a>
-                <a href="#">
+                <a href="https://www.eduardo-monica.com/new-blog/como-fotografar-com-celular-dicas" target="_blank" >
                     <figure class="destaques_painel">
-                        <img src="img/dicas-fotografia.png" alt="" class="destaques_painel-img">
+                        <img src="img/fotografando-com-celular.jpg" alt="" class="destaques_painel-img">
                         <figcaption class="destaques_painel-texto">Veja dicas de como fotografar usando seu celular
                         </figcaption>
                     </figure>
                 </a><a href="#" class="destaques_botao botao">Receber destaques por email</a>
+            </section>
+
+            <section class="especialidades" id="diferenciais">
+                <h2 class="especialidades__titulo">Nossos diferenciais</h2>
+                <article class="carousel">
+                    <button class="carousel__botao carousel__botao--anterior" data-anterior aria-label="botão de voltar"></button>
+                    <button class="carousel__botao carousel__botao--proximo" data-proximo aria-label="botao de avançar"></button>
+                    
+                    <ul class="carousel__lista-produtos" data-lista-produtos>
+                         
+                        <a  class="carousel__produto">
+                            <li class="carousel__imagem-conteiner"><img src="img/foco2.jpg" alt="" class="carousel__imagem"></li>
+                        </a>
+                        
+                        <a  class="carousel__produto">
+                            <li class="carousel__imagem-conteiner"><img src="img/uniao4.jpg" alt="" class="carousel__imagem"></li>
+                        </a>
+                        
+                        <a  class="carousel__produto">
+                            <li class="carousel__imagem-conteiner"><img src="img/criativa.jpg" alt="" class="carousel__imagem"></li>
+                        </a>
+                        
+                        <a  class="carousel__produto">
+                            <li class="carousel__imagem-conteiner"><img src="img/tempo2.png" alt="" class="carousel__imagem"></li>
+                        </a>
+                    </ul>
+                    
+
+                   <div class="carousel__indicadores" data-navegacao>
+                        <button class="carousel__indicador carousel__indicador--ativo" data-indicador="0" 
+                        aria-label="slide 1"></button>
+                        <button class="carousel__indicador" data-indicador="1" 
+                        aria-label="slide 2"></button>
+                        <button class="carousel__indicador" data-indicador="2" 
+                        aria-label="slide 3"></button>
+                        <button class="carousel__indicador" data-indicador="3" 
+                        aria-label="slide 4"></button>
+                    </div>
+
+
+                </article>
             </section>
 
 
@@ -92,65 +139,78 @@
                         <h2 class="item__titulo">Especialistas</h2>
                         <p class="item__texto">Equipe experiente e especializada! Testamos todos os produtos antes do lançamento.</p>
                     </li>
+                    <li class="diferenciais__item diferenciais__item--especialistas">
+                        <h2 class="item__titulo">Criatividade</h2>
+                        <p class="item__texto"> Estimulamos o potencial criativo da sua empresa</p>
+                    </li>
                 </ul>
             </section>
 
 
             <section class="sobre container">
                 <div class="sobre__conteudo">
-                    <h2 class="sobre__titulo">Sobre</h2>
-                    <p class="sobre__texto">Criamos aplicativos personalizados para <strong class="sobre__texto--destaque">todas as pessoas</strong>!</p>
+                    <h2 class="sobre__titulo">Alcance as pessoas certas</h2>
+                    <p class="sobre__texto">Vamos ajudar você <strong class="sobre__texto--destaque">alcancar as pessoas certas</strong>!</p>
                     <p class="sobre__texto">
-                        A manutenção de um aplicativo não pode ser um custo extra para o cliente, Na Apeperia você assina nosso serviço e a manutenção já está inclusa. Assim, você não se preocupa com manutenção, é tudo por nossa conta.
+                        Coloque as pessoas no centro das suas ações de 
+                        marketing com ferramentas que ajudam você a conhecer seu público e ver a quem você deve se dirigir.
                     </p>
                     <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
                         Conte com uma equipe especializada e exclusiva pra projetos incríveis em qualquer plataforma.
                     </p>
-                    <ul class="sobre__plataformas">
-                        <li><img src="img/android.png" alt="Ícone do Android"></li>
-                        <li><img src="img/blackberry.png" alt="Ícone da Blackberry"></li>
-                        <li><img src="img/apple.png" alt="Ícone da Apple"></li>
-                        <li><img src="img/windowsphone.png" alt="Ícone da Microsoft"></li>
-                    </ul>
-                    <p class="sobre__texto">Desenvolvemos aplicativos para todas as plataformas</p>
+                    
                 </div>
-                <img src="img/sobre-apeperia.png" alt="Sobre a Apeperia" class="sobre__imagem">
+                <img src="img/alcance.webp" alt="Sobre a Apeperia" class="sobre__imagem">   
             </section>
 
+            <section class="sobre container">
+                <img src="img/creative.webp" alt="Sobre a Apeperia" class="sobre__imagem"> 
+                <div class="sobre__conteudo">
+                    <h2 class="sobre__titulo">Crie um conteúdo melhor</h2>
+                    <p class="sobre__texto">Vamos ajudar você <strong class="sobre__texto--destaque">alcancar as pessoas certas</strong>!</p>
+                    <p class="sobre__texto">
+                        Faça sua marca brilhar com ferramentas de design fáceis de usar e modelos flexíveis. Nosso Assistente 
+                        Criativo com tecnologia de IA vai gerar designs personalizados para você em questão de segundos.
+                    </p>
+                    <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao"></p>
+                </div>
+                 
+            </section>
 
-
-            <section class="planos container">
-                <h2 class="planos__titulo">Planos</h2>
+            <section class="planos container" id="pacotes">
+                <h2 class="planos__titulo">Temos o plano perfeito para você!</h2>
+                <p class="planos_subtitulo">Escolha seu plano aqui:</p>
                 <ul class="planos__cartoes">
-                    <li class="cartao cartao--start">
-                        <h3 class="cartao__titulo">Start</h3>
+                    <li class="cartao cartao--standart">
+                        <h3 class="cartao__titulo">Standart</h3>
                         <article class="cartao__conteudo">
                             <p class="cartao__preco"><em>R$ 500</em></p>
                             <p class="cartao__texto">5 manutenções mensais</p>
-                            <p class="cartao__texto">App SEO</p>
-                            <p class="cartao__texto">1 sistema operacional</p>
-                            <a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
+                            <p class="cartao__texto">Modelos de e-mail</p>
+                            <p class="cartao__texto">Teste A/B</p>
+                            <a href="plano.html" class="cartao__botao cartao__botao--standart botao">Assinar plano</a>
                         </article>
                     </li>
-                    <li class="cartao cartao--ultra">
-                        <h3 class="cartao__titulo">Ultra</h3>
+                    <li class="cartao cartao--premium">
+                        <h3 class="cartao__titulo">Premium</h3>
                         <article class="cartao__conteudo">
                             <p class="cartao__preco"><em>R$ 1500</em></p>
                             <p class="cartao__texto">20 manutenções mensais</p>
-                            <p class="cartao__texto">App SEO</p>
-                            <p class="cartao__texto">4 sistemas operacionais</p>
+                            <p class="cartao__texto">Assistente criativo</p>
+                            <p class="cartao__texto">Criador de sites</p>
                             <p class="cartao__texto">24h de atendimento</p>
-                            <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+                            <p class="cartao__texto">Segmentação avançada</p>
+                            <a href="" class="cartao__botao cartao__botao--premium botao">Assinar plano</a>
                         </article>
                     </li>
-                    <li class="cartao cartao--mega">
-                        <h3 class="cartao__titulo">Mega</h3>
+                    <li class="cartao cartao--essentials">
+                        <h3 class="cartao__titulo">Essentials</h3>
                         <p class="cartao__preco"><em>R$ 1000</em></p>
                         <article class="cartao__conteudo">
                             <p class="cartao__texto">10 manutenções mensais</p>
-                            <p class="cartao__texto">App SEO</p>
-                            <p class="cartao__texto">2 sistemas operacionais</p>
-                            <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
+                            <p class="cartao__texto">Suporte por e-mail e chat 24 horas por dia</p>
+                            <p class="cartao__texto">Marca personalizada</p>
+                            <a href="" class="cartao__botao cartao__botao--essentials botao">Assinar plano</a>
                         </article>
                     </li>
                 </ul>
@@ -163,43 +223,27 @@
             </section>
 
 
-            <section class="institucional container">
-                <h2 class="institucional__titulo">Institucional</h2>
-                <div class="institucional__conteudo">
-                    
-                    <div class="institucional__informacoes">
-                        <p class="institucional__descricao">Um pouco mais sobre a Apeperia</p>
-                        <address class="institucional__endereco">
-                            Rua Vergueiro, 3185<br>
-                            Vila Mariana, São Paulo
-                            <article class="institucional__contato">
-                                <p><a href="tel:+55115571-2751" class="institucional__contato-telefone">(11) 5571-2751</a> ou 
-                                    <a href="mailto:contato@apeperia.com" class="institucional__contato-email">contato@apeperia.com
-                                    </a></p>
-                            </article>
-                        </address>
-                    </div>
-                    <video src="img/formacao-java.mp4" class="institucional__video" controls></video>
-                </div>
-            </section>
+            
         </main> 
         <footer class="rodape container">
-            <img src="img/logo-apeperia.svg" alt="Logo da appeperia" class="rodape__logo">
-            <ul class="rodape__social">
-                <li><a href="#" class="rodape__midia"><img src="img/facebook.png" alt="icone do facebook"></a></li>
-                <li><a href="#" class="rodape__midia"><img src="img/twitter.png" alt="icone do twitter"></a></li>
-                <li><a href="#" class="rodape__midia"><img src="img/instagram.png" alt="icone do instagram"></a></li>
-            </ul>
+           
+            
             <nav>
                 <ul class="rodape__navegacao">
-                    <li class="rodape__link"><a href="#">sobre</a></li>
-                    <li class="rodape__link"><a href="#">Planos</a></li>
-                    <li class="rodape__link"><a href="#">Blog</a></li>
-                    <li class="rodape__link"><a href="#">Destaques</a></li>
-                    <li class="rodape__link"><a href="#">Institucional</a></li>
-                    <li class="rodape__link"><a href="#">Contato</a></li>
+                    <li class="rodape__link"><a href="#">Home</a></li>
+                    <li class="rodape__link"><a href="#pacotes">Planos</a></li>
+                    <li class="rodape__link"><a href="#destaque">Destaques</a></li>
+                    <li class="rodape__link"><a href="#destaque">Diferenciais</a></li>
+                    <li class="rodape__link"><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
+            <ul class="rodape__social">
+                <li><a href="https://www.facebook.com" target="_blank" class="rodape__midia"><img src="img/facebook.png" alt="icone do facebook"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" class="rodape__midia"><img src="img/twitter.png" alt="icone do twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" class="rodape__midia"><img src="img/instagram.png" alt="icone do instagram"></a></li>
+            </ul>
         </footer>
+
+        <script src="js/index.js" type="module"></script>
     </body>
 </html>

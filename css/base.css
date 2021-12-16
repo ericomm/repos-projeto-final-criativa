@@ -13,9 +13,11 @@
 --bg-rodape: #333;
 --bg-chamada-mobile: #00161C;
 
---planos-cartao-start: #56CCF2;
---planos-cartao-ultra: #B04CD9;
---planos-cartao-mega: #E33B3B;
+
+/* base de cores para cartoes dos planos*/
+--planos-cartao-standart: green;
+--planos-cartao-premium: green;
+--planos-cartao-essentials: green;
 
 --montserrat: 'Montserrat', sans-serif;
 }
@@ -31,15 +33,26 @@ body{
 
 .botao {
     text-align: center;
+    /* display block para conseguir mudar o tamanho*/
     display: block;
     width: 100%;
+    /*limitando o tamanho*/
     max-width: 350px;
     box-sizing: border-box;
     padding: 1rem 2rem;
     border: 1px solid var(--branco);
+    border-radius: 5px;
 }
 
 
+
+
+
+
+
+
+/* arrumando padding do container - limitando tamanho da tela 
+pra que todo conteudo fique sempre dentro de 950px*/
 @media screen and (min-width: 1024px) {
     .container {
         padding-left: calc((100% - 940px)/2);

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet">
+
+    <link href="css/base.css" rel="stylesheet">
+
+	<link href="css/cabecalho.css" rel="stylesheet">
+	<link href="css/chamada.css" rel="stylesheet">
+	<link href="css/page-contato.css" rel="stylesheet">
+	<link href="css/rodape.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabecalho container">
+		<a href="index.html"
+			<h2 class="cabecalho_logo">Criativa</h2>
+		</a>
+
+			<nav class="cabecalho_navegacao">
+                <ul>
+                    <li class="cabecalho_link"><a href="index.html">Home</a></li>
+                    <li class="cabecalho_link"><a href="index.html">Planos</a></li>
+                    <li class="cabecalho_link"><a href="index.html">Destaques</a></li>
+					<li class="cabecalho_link"><a href="index.html">Diferenciais</a></li>
+                    <li class="cabecalho_link"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+		
+	</header>
+
+
+	<main>
+		<section class="chamada container">
+			<h1 class="chamada_titulo">Ok, você chegou ao fim do site da Criativa.</h1>
+			<p class="chamada_texto">Agora conte para nós qual a sua necessidade hoje.</p>
+			<a class="chamada_botao botao" href="#orcamento">Faça já seu orçamento</a>
+		</section>
+
+
+		<section class= "entre-contato">
+			<h3>fale com a gente!</h3>
+			<p>Fale com a gente pelo <a href="https://www.facebook.com" target="_blank">Facebook</a>, <a href="https://www.instagram.com" target="_blank">Instagram</a> ou por aqui.
+			Se preferir, mande e-mail direto para o contato@criativa.com.br ou então ligue para <a href="https://api.whatsapp.com/send?phone=+5519999999999&text=Texto%20aqui" target="_blank">+55 51 9999 9999</a>.
+			</p>
+		</section>
+
+		<section class="cadastro-container" id="orcamento">
+
+			<form class="formulario">
+			  
+			  <div class="form-field">
+				<label class="form-field__label" for="nome"></label>
+				<input class="form-field__input" id="nome"  placeholder="Nome completo"
+				 name="nome"/>
+		  
+			  </div>
+		  
+			  <div class="form-field">
+				<label class="form-field__label" for="email"></label>
+				<input class="form-field__input" id="email" type="text"  name="email"
+				placeholder="Email"/>
+			  </div>
+
+			  <div class="form-field">
+				<select class="form-field__select" name="assunto">
+					<option value="0" selected disabled="">Assunto</option>
+					<option value="vagas"> Afim de trabalhar com a gente</option>
+					<option value="orcamento">Orçamentos</option>
+					<option value="elogio">Receber informações via email</option>
+				</select>
+			  </div>
+
+			  <div class="form-field">
+				<textarea name="mensagem" placeholder="Deixa aqui sua mensagem..." rows="8"></textarea>
+			  </div>
+
+			  <div class="form-field">
+				<label><input class="form-field__checkbox" type="checkbox" checked=""> 
+					Gostaria de receber nossas novidades por email?</label>
+			  </div>
+		  
+	
+			  <div class="botao-envelope">
+				<button class="botao-form" type="submit">Enviar</button>
+			  </div>
+
+			</form>
+
+			<div class="map__image">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.06279649192!2d-51.22854228517495!3d-30.03505623779988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979c1b2fe8ead%3A0xd59ee60ded07ab21!2sFIRMA!5e0!3m2!1spt-BR!2sbr!4v1625166010689!5m2!1spt-BR!2sbr" 
+				style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+
+		</section>
+
+		<footer class="rodape container">
+            <!--<img src="img/atl-fff.jpeg" alt="" class="rodape__logo">-->
+            
+            <nav>
+                <ul class="rodape__navegacao">
+                    <li class="rodape__link"><a href="index.html">Home</a></li>
+                    <li class="rodape__link"><a href="index.html">Planos</a></li>
+                    <li class="rodape__link"><a href="index.html">Destaques</a></li>
+					<li class="rodape__link"><a href="index.html">Diferenciais</a></li>
+                    <li class="rodape__link"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <ul class="rodape__social">
+                <li><a href="https://www.facebook.com" target="_blank" class="rodape__midia"><img src="img/facebook.png" alt="icone do facebook"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank" class="rodape__midia"><img src="img/twitter.png" alt="icone do twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" class="rodape__midia"><img src="img/instagram.png" alt="icone do instagram"></a></li>
+            </ul>
+        </footer>
+
+		  
+
+		  		
+		
+
+	
+
+	</main>	
+    
+</body>
+</html>

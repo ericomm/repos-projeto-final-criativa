@@ -2,7 +2,9 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
-
+.sobre__conteudo{
+    margin: 15px 45px 0 15px;
+}
 .sobre__titulo {
     color: var(--cinza-escuro);
     font-weight: 700;
@@ -36,6 +38,7 @@
 /* Imagem nao aparece enquanto mobile*/
 .sobre__imagem{
     display:none;
+    width: 45%;
 }
 
 /* adaptando layout desktop*/

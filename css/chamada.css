@@ -7,17 +7,17 @@
     text-align: center;
     
     background-color: var(--bg-chamada-mobile);
-
     padding-top: 12.25rem;
     padding-bottom: 2.5rem;
+   
 }
 
 .chamada_titulo {
     font-family: 'Montserrat', serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -32,8 +32,16 @@
     width: 100%;
 }
 
+.chamada_botao:hover,
+.chamada_botao:active {
+    background-color: orange;
+    border: 1px solid  orange;
+    color: #FFF;
+}
+
 /* Responsividade tablets*/
 @media screen and (min-width: 768px){
+    
     .chamada_texto{
         max-width: 600px;
     }
@@ -42,11 +50,18 @@
 @media screen and (min-width:1024px){
     .chamada{
         /* colocando imagem de fundo quando desktop*/
-        background-image: url(../img/bg-intro.jpg);
-        background-size: cover;
-
-        padding-top: 8.25rem;
+        background-image: url(../img/capa.jpg);
+        height: 70vh;
+        background-position: center;
+        background-size: cover
+        /*padding-top: 8.25rem;*/
+        
     }
+
+  
+        
+        
+    
 
     .chamada_titulo{
         font-size: 3.25rem;

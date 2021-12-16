@@ -27,3 +27,11 @@
 
     margin-top: 1rem;
 }
+
+.contato__botao:hover,
+.contato__botao:active {
+    opacity: 0.8;
+    background-color: var(--cinza-escuro);
+    border: 1px solid  #FFF;
+    color: #FFF;
+}

@@ -1,0 +1,123 @@
+/****************************conteudo **************************/
+
+.entre-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--branco);
+    text-align: center;
+    
+    background-color: var(--bg-chamada-mobile);
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.entre-contato h3{
+	margin-bottom: 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	/*Criando espacamento entre as linhas*/
+	letter-spacing: 1px;
+}
+
+.entre-contato p{
+	margin: 0 350px;
+	padding: 0 55px;
+	line-height: 28px;
+}
+
+/*************** sessao contato e mapa *******************/
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 30px auto 30px auto;
+  }
+
+.formulario {
+    background-color: white;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+} 
+
+.formulario__titulo{
+    color: #000;
+}
+
+.form-field {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-envelope {
+    display: flex;
+  }
+
+.botao-form {
+    color: white;
+    display: block;
+    flex: 1;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #ff385c;
+    font-size: 16px;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: #ff385c;
+    background-color: white;
+  }
+
+  .botao-form:hover,
+  .botao-form:active {
+      opacity: 0.8;
+      background-color: #ff385c;
+      border: 1px solid  #FFF;
+      color: #FFF;
+  }
+
+.map__image iframe{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+	height: 360px;
+}
+
+
+@media screen and (min-width:1024px){
+    .chamada{
+        /* colocando imagem de fundo quando desktop*/
+        background-image: url(../img/office.jpg);
+        height: 70vh;
+        background-position: center;
+        background-size: cover
+        /*padding-top: 8.25rem;*/
+        
+    }
+
+    .cadastro-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .formulario{
+        width: 40%;
+        margin-top: 30px;
+    }
+    
+    .map__image{
+        width: 45%;   
+    }
+
+    
+}
+

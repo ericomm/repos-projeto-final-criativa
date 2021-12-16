@@ -1,0 +1,28 @@
+.especialidades{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2.5rem;
+    background-color: orange;
+}
+
+.especialidades__titulo{
+    color: var(--cinza-escuro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+}
+
+/* adaptando layout desktop*/
+@media screen and (max-width:780px) {
+    .especialidades{
+        display: none;
+    }
+    
+
+}
+

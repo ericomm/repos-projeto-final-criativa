@@ -18,11 +18,18 @@
 }
 
 .cabecalho_logo {
+    font-size: 20px;
+    font-weight: 900;
     margin-bottom: 1rem;
+    width: 180px;
+    text-align: center;
 }
 
 .cabecalho_navegacao {
+    display: flex;
+   
     text-align: center;
+    
 }
 
 .cabecalho_link {
@@ -35,9 +42,24 @@
     margin-left: .7rem;
 }
 
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+
+
 /* A partir de 1024 layout para desktop*/
 @media screen and (min-width: 1024px){
     .cabecalho{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         border:none;
